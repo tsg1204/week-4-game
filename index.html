@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/spacelab/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
   <!--[if lt IE 9]>
 
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,25 +23,53 @@
 	  		</div>
 	  	</div>
 	  	<div class="row">
-			<div class="col-lg-offset-2 col-lg-6">
-				<div id="game-container" >
-					<p>Testing</p>
-				</div>
+			<div id="players" class="col-lg-offset-2 col-lg-8">
+				<p id="titleFirst">Choose a hero to play: </p>
+				<div id="achilles" class="characters"><img  src="assets/images/achilles.jpg"/></div>
+				<div id="heracles" class="characters" ><img src="assets/images/heracles.jpg"/></div>
+				<div id="perseus" class="characters" ><img src="assets/images/perseus.jpg"/></div>
+				<div id="zeus" class="characters" ><img src="assets/images/zeus.jpg"/></div>
 			</div>
-			<div>
-				<img id="athens" src="assets/images/athens.jpg"/>
+		</div>
+	  	<div class="row">
+			<div class="col-lg-offset-2 col-lg-8">
+				<p id="titleYou">Your character: </p>
+				<div id="attacker"> </div>
 			</div>
-
-
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-8">
+				<p id="titleEnem">Your Enemies: </p>
+				<div id="enemies"> </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-8">
+				<p>Fight Section </p>
+				<button id="btn-attack">Attack</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-8">
+				<p id="titleDef">Defender: </p>
+				<div id="defender"> </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-8">
+				<p id="yPowers">Your attack powers</p>
+				<p id="defPowers">Defender attack powers</p>
+			</div>
+		</div>
 				<audio id="win-sound">
 				    <source src=assets/sound/tada.wav>
 				</audio>
 				<audio id="lost-sound">
 				    <source src=assets/sound/gameover.wav>
 				</audio>
-			</div>
 		</div>
 	<!-- end Main section -->
+
 	</div> <!--<div class="container">-->	<!-- Footer section -->
 	<footer class="footer">
 	  <div class="container">
@@ -48,6 +77,6 @@
 	  </div>
 	</footer>
 
-	<script type="text/javascript" src="assets/js/hwhangman.js"></script>
+	<script type="text/javascript" src="assets/js/game.js"></script>
 </body>
 </html>
