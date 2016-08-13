@@ -23,42 +23,63 @@
 	  		</div>
 	  	</div>
 	  	<div class="row">
-			<div id="players" class="col-lg-offset-2 col-lg-8">
-				<p id="titleFirst">Choose a hero to play: </p>
-				<div id="achilles" class="characters"><img  src="assets/images/achilles.jpg"/></div>
-				<div id="heracles" class="characters" ><img src="assets/images/heracles.jpg"/></div>
-				<div id="perseus" class="characters" ><img src="assets/images/perseus.jpg"/></div>
-				<div id="zeus" class="characters" ><img src="assets/images/zeus.jpg"/></div>
+			<div id="players" class="col-sm-offset-2 col-lg-8">
+				<p id="titleFirst">Choose a heroe to play: </p>
 			</div>
 		</div>
+		<div class="row">
+			<div id="achilles" class=" col-xs-offset-0 col-sm-offset-0 col-lg-offset-2 col-xs-3 col-sm-3 col-lg-2 thumbnail characters"><img  src="assets/images/achilles.jpg"/>
+				<div class="character-name">Achilles 150</div>
+			</div>
+			<div id="heracles" class="col-xs-3 col-sm-3 col-lg-2 thumbnail characters" ><img src="assets/images/heracles.jpg"/>
+				<div class="character-name">Heracles 120</div>
+			</div>
+
+			<div id="perseus" class="col-xs-3 col-sm-3 col-lg-2 thumbnail characters" ><img src="assets/images/perseus.jpg"/>
+				<div class="character-name">Perseus 100</div>
+			</div>
+
+			<div id="zeus" class="col-xs-3 col-sm-3 col-lg-2 thumbnail characters" ><img src="assets/images/zeus.jpg"/>
+				<div class="character-name">Zeus 180</div>
+			</div>
+		</div>
+
 	  	<div class="row">
-			<div class="col-lg-offset-2 col-lg-8">
-				<p id="titleYou">Your character: </p>
-				<div id="attacker"> </div>
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-2">
+				<p id="titleYou">Your character: 
+				<span id="attacker"> </span></p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8">
+			<div class="col-lg-offset-2 col-xs-6 col-lg-8">
 				<p id="titleEnem">Your Enemies: </p>
-				<div id="enemies"> </div>
 			</div>
 		</div>
+		<div id="enemies" class="row"></div>	
+
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-8">
 				<p>Fight Section </p>
-				<button id="btn-attack">Attack</button>
+				<button id="btn-attack" disabled>Attack</button>
 			</div>
 		</div>
+		
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-2">
 				<p id="titleDef">Defender: </p>
 				<div id="defender"> </div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8">
-				<p id="yPowers">Your attack powers</p>
-				<p id="defPowers">Defender attack powers</p>
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-8">
+				<div id="yPowers">Attacker Powers</div>
+				<div id="defPowers">Defender Powers</div>
+				<div id="win-lost"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-0 col-lg-offset-2 col-xs-6 col-lg-8">
+				<button id="btn-start">Restart</button>
 			</div>
 		</div>
 				<audio id="win-sound">
